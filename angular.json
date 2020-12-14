@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "routing-test": {
+    "juegos-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/routing-test",
+            "outputPath": "dist/juegos-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "routing-test:build"
+            "browserTarget": "juegos-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "routing-test:build:production"
+              "browserTarget": "juegos-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "routing-test:build"
+            "browserTarget": "juegos-angular:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "routing-test:serve"
+            "devServerTarget": "juegos-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "routing-test:serve:production"
+              "devServerTarget": "juegos-angular:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "routing-test"
+  "defaultProject": "juegos-angular"
 }

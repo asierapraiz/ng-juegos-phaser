@@ -1,0 +1,1 @@
+console.log(asier.nombre);
